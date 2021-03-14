@@ -1,5 +1,5 @@
 This repository contains a PIP package which is an OpenAI environment for
-simulating an enironment in which numerais get sold.
+numerai stock trading learning.
 
 
 ## Installation
@@ -27,11 +27,5 @@ examples.
 
 ## The Environment
 
-Imagine you are selling numerais. One at a time. And the numerais get bad pretty
-quickly. Let's say in 3 days. The probability that I will sell the numerai
-is given by
-
-$$p(x) = (1+e)/(1. + e^(x+1))$$
-
-where x-1 is my profit. This x-1 is my reward. If I don't sell the
-numerai, the agent gets a reward of -1 (the price of the numerai).
+Pulls latest numerai training data and sends each row as a state. Take an action from 0-1
+and that will be compared against the actual target and returns (1-MSE) as reward. Episode ends when all training data has been run through.
