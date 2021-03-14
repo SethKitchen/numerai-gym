@@ -12,6 +12,10 @@ Then install this package via
 pip install -e .
 ```
 
+```
+pip install -i https://test.pypi.org/simple/ gym-numerai
+```
+
 ## Usage
 
 ```
